@@ -14,14 +14,14 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Manu Castrillon /'),
-  handle: chalk.bgMagenta.white('manucastrillonm'),
-  work: chalk.white('Web Engineer at Huge inc'),
-  twitter: chalk.cyan('https://twitter.com/manucastrillonm'),
-  github: chalk.cyan('https://github.com/manucastrillonm'),
-  linkedin: chalk.cyan('https://linkedin.com/in/manuelacastrillon'),
-  web: chalk.cyan('https://manucastrillonm.co'),
-  npx: chalk.white('npx manucastrillonm'),
+  name: chalk.hex('#ffab91').bold('Manu Castrillon'),
+  handle: chalk.hex('#ffab91').bold(' manucastrillonm '),
+  work: chalk.white.bold('Web Engineer at Huge inc'),
+  twitter: chalk.hex('#ab91ff')('https://twitter.com/manucastrillonm'),
+  github: chalk.hex('#ab91ff')('https://github.com/manucastrillonm'),
+  linkedin: chalk.hex('#ab91ff')('https://linkedin.com/in/manuelacastrillon'),
+  web: chalk.hex('#ab91ff')('https://manucastrillonm.co'),
+  npx: chalk.hex('#ab91ff')('npx manucastrillonm'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
@@ -32,7 +32,7 @@ const data = {
 
 // Actual strings we're going to output
 const newline = '\n'
-const heading = `${data.name} 👩🏻‍💻${data.handle}`
+const heading = `👩🏻‍💻 ${data.name} / ${data.handle}`
 const working = `${data.labelWork}  ${data.work}`
 const twittering = `${data.labelTwitter}  ${data.twitter}`
 const githubing = `${data.labelGitHub}  ${data.github}`
@@ -43,4 +43,4 @@ const carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
-console.log(chalk.magenta(boxen(output, options)))
+console.log(chalk.hex('#91ffab')(boxen(output, options)))
