@@ -14,14 +14,14 @@ const options = {
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('Tierney Cyren /'),
-  handle: chalk.cyan('bitandbang'),
-  work: chalk.white('Senior Cloud Developer Advocate at Microsoft'),
-  twitter: chalk.cyan('https://twitter.com/bitandbang'),
-  github: chalk.cyan('https://github.com/bnb'),
-  linkedin: chalk.cyan('https://linkedin.com/in/bitandbang'),
-  web: chalk.cyan('https://bnb.im'),
-  npx: chalk.white('npx bitandbang'),
+  name: chalk.white('Manu Castrillon /'),
+  handle: chalk.cyan('manucastrillonm'),
+  work: chalk.white('Web Engineer at Huge inc'),
+  twitter: chalk.cyan('https://twitter.com/manucastrillonm'),
+  github: chalk.cyan('https://github.com/manucastrillonm'),
+  linkedin: chalk.cyan('https://linkedin.com/in/manuelacastrillon'),
+  web: chalk.cyan('https://manucastrillonm.co'),
+  npx: chalk.white('npx manucastrillonm'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
   labelGitHub: chalk.white.bold('    GitHub:'),
@@ -43,4 +43,4 @@ const carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen effectively
 const output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+console.log(chalk.magenta(boxen(output, options)))
