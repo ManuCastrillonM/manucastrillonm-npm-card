@@ -16,11 +16,11 @@ const options = {
 const data = {
   name: chalk.hex('#ffab91').bold('Manu Castrillon'),
   handle: chalk.hex('#ffab91').bold(' manucastrillonm '),
-  work: chalk.white.bold('Web Engineer at Huge inc'),
+  work: chalk.white.bold('Software Engineer'),
   twitter: chalk.hex('#ab91ff')('https://twitter.com/manucastrillonm'),
   github: chalk.hex('#ab91ff')('https://github.com/manucastrillonm'),
   linkedin: chalk.hex('#ab91ff')('https://linkedin.com/in/manuelacastrillon'),
-  web: chalk.hex('#ab91ff')('https://manucastrillonm.co'),
+  web: chalk.hex('#ab91ff')('https://www.manuela.dev'),
   npx: chalk.hex('#ab91ff')('npx manucastrillonm'),
   labelWork: chalk.white.bold('      Work:'),
   labelTwitter: chalk.white.bold('   Twitter:'),
